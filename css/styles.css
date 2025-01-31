@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+
+body {
+  min-height: 100vh;
+  min-width: none;
+  display: grid;
+  grid-template-areas:
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-main my-main my-main"
+    "my-footer my-footer my-footer";
+  grid-template-rows: 40px auto 2fr auto auto;
+  grid-template-columns: 100%;
+}
+
+/* HEADER */
+
+header {
+  grid-area: my-header;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+  url("../images/ThunderLight.webp");
+  font-weight: 800;
+}
+
+.header-text{
+    padding: 10px;
+}
+
+/* MENU NAV */
+
+nav {
+  grid-area: my-nav;
+  border: 1px red solid;
+  font-weight: 900;
+  font-size: 1.5rem;
+  background-color: black;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+ul a:hover  {
+    background-color: blueviolet;
+}
+
+ul a.active {
+    background-color: blueviolet;
+}
+ul a:hover:not(.active) {
+    background-color: #b089c2;
+    color: white;
+  }
+
+ul li img {
+  max-height: 100px;
+}
+
+.menu,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.opcion {
+  max-height: auto;
+  padding: 15px;
+  margin: 15px;
+}
+
+/* MAIN TAGS */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/AdobeStock_905444846.jpeg");
+  background-size: fit;
+  background-repeat: no-repeat;
+}
+
+main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* MAIN PRODUCTOS Y GALERIA */
+main .galeria {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px 50px 25px;
+  grid-gap: 1rem;
+}
+
+main .producto {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 25px;
+}
+
+.productos-descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.productos-descripcion a {
+  color: blue;
+}
+
+/* PRESUPUESTOS */
+
+.main-presupuesto {
+  background-color: rgb(105, 105, 199, 0.6);
+  border-radius: 25px;
+  background-size: cover;
+}
+
+.presupuesto {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+form button b {
+  color: black;
+  font-size: large;
+}
+
+/* FOOTER */
+
+footer {
+  grid-area: my-footer;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px red solid;
+  background-color: black;
+}
+
+/* FOOTER  REDES SOCIALES */
+
+.redes {
+  display: flex;
+  max-width: 400px;
+  border: 1px solid yellow;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.redes-sociales a img {
+  justify-content: space-between;
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.social {
+  list-style: none;
+}
+/* FOOTER AVISO LEGAL  */
+.aviso-legal {
+  border: 2px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+}
+/* FOOTER DIRECCION  */
+
+.direccion {
+  border: 2px solid aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+}
+
+/* FOOTER SITEMAP  */
+
+
+.sitemap {
+  border: 1px solid green;
+  display: flex;
+}
+
+.sitemap ul {
+  list-style: none;
+  flex-direction: column;
+}
+
+.titulo-sitem {
+  text-transform: capitalize;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* FOOTER LOGO  */
+
+.logo-footer img{
+    max-height: 100px;
+    max-width: 100px;
+
+}
