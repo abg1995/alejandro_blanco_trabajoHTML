@@ -16,7 +16,7 @@ body {
     "my-nav my-nav my-nav"
     "my-main my-main my-main"
     "my-footer my-footer my-footer";
-  grid-template-rows: 40px auto 2fr auto auto;
+  grid-template-rows: 40px auto 3fr auto ;
   grid-template-columns: 100%;
 }
 
