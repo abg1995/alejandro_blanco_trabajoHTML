@@ -105,7 +105,7 @@ main div {
 main .galeria {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
-  grid-template-rows: 300px 300px 300px 50px 25px;
+  grid-template-rows: 300px 300px 300px 50px;
   grid-gap: 1rem;
 }
 
