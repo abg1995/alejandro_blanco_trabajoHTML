@@ -16,7 +16,7 @@ body {
     "my-nav my-nav my-nav"
     "my-main my-main my-main"
     "my-footer my-footer my-footer";
-  grid-template-rows: 40px auto 3fr auto ;
+  grid-template-rows: 40px auto 3fr auto;
   grid-template-columns: 100%;
 }
 
@@ -27,13 +27,16 @@ header {
   display: flex;
   align-content: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-  url("../images/ThunderLight.webp");
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.5),
+      rgba(255, 255, 0, 0.5)
+    ),
+    url("../images/ThunderLight.webp");
   font-weight: 800;
 }
 
-.header-text{
-    padding: 10px;
+.header-text {
+  padding: 10px;
 }
 
 /* MENU NAV */
@@ -54,17 +57,17 @@ ul {
   align-content: center;
 }
 
-ul a:hover  {
-    background-color: blueviolet;
+ul a:hover {
+  background-color: blueviolet;
 }
 
 ul a.active {
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 ul a:hover:not(.active) {
-    background-color: #b089c2;
-    color: white;
-  }
+  background-color: #b089c2;
+  color: white;
+}
 
 ul li img {
   max-height: 100px;
@@ -95,13 +98,28 @@ main {
 }
 
 main div {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main section {
   display: flex;
+  justify-content: center;
+}
+
+.seccion-main {
+  justify-content: center;
+}
+
+.seccion-main article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 /* MAIN PRODUCTOS Y GALERIA */
+
 main .galeria {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
@@ -197,7 +215,6 @@ footer {
 
 /* FOOTER SITEMAP  */
 
-
 .sitemap {
   border: 1px solid green;
   display: flex;
@@ -212,16 +229,15 @@ footer {
   text-transform: capitalize;
 }
 
-.logo-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* FOOTER LOGO  */
 
-.logo-footer img{
-    max-height: 100px;
-    max-width: 100px;
-
+.logo-footer img {
+  max-height: 100px;
+  max-width: 100px;
 }
