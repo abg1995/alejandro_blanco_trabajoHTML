@@ -43,7 +43,6 @@ header {
 
 nav {
   grid-area: my-nav;
-  border: 1px red solid;
   font-weight: 900;
   font-size: 1.5rem;
   background-color: black;
@@ -118,6 +117,11 @@ main section {
   flex-direction: column;
 }
 
+.main-contacto {
+  display: flex;
+  flex-direction: row;
+}
+
 /* MAIN PRODUCTOS Y GALERIA */
 
 main .galeria {
@@ -130,7 +134,6 @@ main .galeria {
 main .producto {
   max-height: 300px;
   max-width: 300px;
-  border-radius: 25px;
 }
 
 .productos-descripcion {
@@ -149,7 +152,6 @@ main .producto {
 
 .main-presupuesto {
   background-color: rgb(105, 105, 199, 0.6);
-  border-radius: 25px;
   background-size: cover;
 }
 
@@ -164,13 +166,19 @@ form button b {
   font-size: large;
 }
 
+/* CONTACTO */
+
+.articulo-contacto {
+  background-color: rgba(100, 100, 100, 0.72);
+  justify-content: space-between;
+}
+
 /* FOOTER */
 
 footer {
   grid-area: my-footer;
   display: flex;
   justify-content: space-evenly;
-  border: 1px red solid;
   background-color: black;
 }
 
@@ -179,7 +187,7 @@ footer {
 .redes {
   display: flex;
   max-width: 400px;
-  border: 1px solid yellow;
+
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -196,7 +204,6 @@ footer {
 }
 /* FOOTER AVISO LEGAL  */
 .aviso-legal {
-  border: 2px solid orange;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,7 +213,6 @@ footer {
 /* FOOTER DIRECCION  */
 
 .direccion {
-  border: 2px solid aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,7 +222,6 @@ footer {
 /* FOOTER SITEMAP  */
 
 .sitemap {
-  border: 1px solid green;
   display: flex;
 }
 
