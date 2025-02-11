@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -49,6 +48,7 @@ nav {
 }
 
 ul {
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -58,10 +58,12 @@ ul {
 
 ul a:hover {
   background-color: blueviolet;
+  color: white;
 }
 
 ul a.active {
   background-color: blueviolet;
+  color: white;
 }
 ul a:hover:not(.active) {
   background-color: #b089c2;
@@ -74,8 +76,10 @@ ul li img {
 
 .menu,
 a {
+  color: white;
   list-style: none;
   text-decoration: none;
+  padding: 20px;
 }
 
 .opcion {
@@ -87,6 +91,7 @@ a {
 /* MAIN TAGS */
 
 main {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,15 +155,25 @@ main .producto {
 
 /* PRESUPUESTOS */
 
+.presupuestos {
+  color: black;
+}
+
 .main-presupuesto {
   background-color: rgb(105, 105, 199, 0.6);
   background-size: cover;
+  color: black;
+}
+
+form .presupuesto {
+  color: black;
 }
 
 .presupuesto {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
+  color: black;
 }
 
 form button b {
@@ -180,6 +195,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   background-color: black;
+  color: white;
 }
 
 /* FOOTER  REDES SOCIALES */
@@ -187,7 +203,6 @@ footer {
 .redes {
   display: flex;
   max-width: 400px;
-
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -223,15 +238,18 @@ footer {
 
 .sitemap {
   display: flex;
+  color: white;
 }
 
 .sitemap ul {
   list-style: none;
   flex-direction: column;
+  color: white;
 }
 
 .titulo-sitem {
   text-transform: capitalize;
+  color: white;
 }
 
 .logo-footer {
