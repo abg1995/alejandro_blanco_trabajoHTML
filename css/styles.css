@@ -15,7 +15,7 @@ body {
     "my-nav my-nav my-nav"
     "my-main my-main my-main"
     "my-footer my-footer my-footer";
-  grid-template-rows: 40px auto 3fr auto;
+  grid-template-rows: 40px auto 4fr auto;
   grid-template-columns: 100%;
 }
 
@@ -110,17 +110,21 @@ main div {
 main section {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
 }
 
 .seccion-main {
   justify-content: center;
 }
 
-.seccion-main article {
+/* .seccion-main article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
 .main-contacto {
   display: flex;
