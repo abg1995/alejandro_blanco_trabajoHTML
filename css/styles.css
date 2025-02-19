@@ -129,6 +129,7 @@ main section {
 .main-contacto {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 /* MAIN PRODUCTOS Y GALERIA */
@@ -189,7 +190,8 @@ form button b {
 
 .articulo-contacto {
   background-color: rgba(100, 100, 100, 0.72);
-  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
 }
 
 /* FOOTER */
