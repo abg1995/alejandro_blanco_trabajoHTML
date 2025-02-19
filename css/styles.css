@@ -60,16 +60,16 @@ ul {
   align-content: center;
 }
 
-ul a:hover {
+nav ul a:hover {
   background-color: blueviolet;
   color: white;
 }
 
-ul a.active {
+nav ul a.active {
   background-color: blueviolet;
   color: white;
 }
-ul a:hover:not(.active) {
+nav ul a:hover:not(.active) {
   background-color: #b089c2;
   color: white;
 }
@@ -128,12 +128,14 @@ main section {
   background-color: var(--backgrounds);
   margin: 30px;
   padding: 20px;
+  border-radius: 20px;
 }
 
 .main-contacto {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: white;
 }
 
 /* MAIN PRODUCTOS Y GALERIA */
@@ -148,6 +150,7 @@ main section {
   background-color: var(--backgrounds);
   margin: 25px;
   padding-top: 20px;
+  border-radius: 25px;
 }
 
 main .galeria {
@@ -235,6 +238,10 @@ footer {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+}
+
+.redes-sociales-titulo {
+  padding-bottom: 20px;
 }
 
 .redes-sociales a img {
