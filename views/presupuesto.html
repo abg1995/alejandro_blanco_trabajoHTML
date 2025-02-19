@@ -32,15 +32,15 @@
 
     <form action="post" class="presupuesto">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required>
+            <input type="text" pattern="[a-z] & [A-Z]" name="nombre" id="nombre" placeholder="Nombre y apellidos" required>
             <br>
             <label for="email">Email:</label>
-            <input type="email" id="email" required>
+            <input type="email" placeholder="email" id="email" required>
             <br><br>
             <label for="telefono">Telefono</label>
-            <input type="tel" name="telefono" id="telefono" required>
+            <input type="tel" placeholder="telefono" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
             <label for="informacion">Solicite mas informacion</label>
-            <textarea name="informacion" id="informacion"></textarea>
+            <textarea name="informacion" placeholder="Cuentanos sobre tu proyecto!" id="informacion"></textarea>
             <label for="privacidad">Acepto la politica de privacidad</label> <input type="checkbox" name="privacidad" id="privacidad" required>
             <button type="submit" ><b>Enviar presupuesto!</b></button>
             
@@ -78,8 +78,8 @@
         </div>
 
         <div class="sitemap">
-            <p class="titulo-sitem"><b>Site map</b></p>
             <ul> 
+                <li><p class="titulo-sitem"><b>Site map</b></p></li>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../views/productos.html">Productos</a></li>
                 <li><a href="../views/presupuesto.html">Presupuestos</a></li>
