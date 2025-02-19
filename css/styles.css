@@ -4,6 +4,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --backgrounds: rgb(105, 105, 199, 0.5);
+}
+
 /* BODY */
 
 body {
@@ -120,11 +124,11 @@ main section {
   justify-content: center;
 }
 
-/* .seccion-main article {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
+.seccion-main section {
+  background-color: var(--backgrounds);
+  margin: 30px;
+  padding: 20px;
+}
 
 .main-contacto {
   display: flex;
@@ -133,6 +137,18 @@ main section {
 }
 
 /* MAIN PRODUCTOS Y GALERIA */
+
+.titulo {
+  margin: 15px;
+  background-color: black;
+  padding: 0 10px;
+}
+
+.galeria {
+  background-color: var(--backgrounds);
+  margin: 25px;
+  padding-top: 20px;
+}
 
 main .galeria {
   display: grid;
@@ -152,6 +168,10 @@ main .producto {
   justify-content: center;
   align-items: center;
   align-content: center;
+  background-color: var(--backgrounds);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
 }
 
 .productos-descripcion a {
@@ -165,7 +185,7 @@ main .producto {
 }
 
 .main-presupuesto {
-  background-color: rgb(105, 105, 199, 0.6);
+  background-color: var(--backgrounds);
   background-size: cover;
   color: black;
   border-radius: 25px;
@@ -192,7 +212,7 @@ form button b {
 /* CONTACTO */
 
 .articulo-contacto {
-  background-color: rgba(100, 100, 100, 0.72);
+  background-color: var(--backgrounds);
   padding: 20px;
   margin: 20px;
 }
