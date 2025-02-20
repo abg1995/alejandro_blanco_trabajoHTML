@@ -214,8 +214,20 @@ form button b {
 
 /* CONTACTO */
 
+.titulo-contacto {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: black;
+}
+
 .articulo-contacto {
   background-color: var(--backgrounds);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 25px;
+}
+
+.mapa {
   padding: 20px;
   margin: 20px;
 }
