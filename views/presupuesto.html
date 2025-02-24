@@ -31,13 +31,13 @@
 
     <form action="post" class="presupuesto">
             <label for="nombre">Nombre:</label>
-            <input type="text" pattern="[^a-zA-Z]+" name="nombre" id="nombre" placeholder="Nombre y apellidos" required>
+            <input type="text" pattern="^[a-zA-Z]+$" name="nombre" id="nombre" placeholder="Nombre y apellidos" required>
             <br>
             <label for="email">Email:</label>
             <input type="email" placeholder="email" id="email" required>
             <br><br>
             <label for="telefono">Telefono</label>
-            <input type="tel" placeholder="telefono" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+            <input type="tel" placeholder="telefono" name="telefono" id="telefono" pattern="[0-9]{9}" required>
             <label for="informacion">Solicite mas informacion</label>
             <textarea name="informacion" placeholder="Cuentanos sobre tu proyecto!" id="informacion"></textarea>
             <label for="privacidad">Acepto la politica de privacidad</label> <input type="checkbox" name="privacidad" id="privacidad" required>
