@@ -31,7 +31,7 @@
 
     <form action="post" class="presupuesto">
             <label for="nombre">Nombre:</label>
-            <input type="text" pattern="[a-z] & [A-Z]" name="nombre" id="nombre" placeholder="Nombre y apellidos" required>
+            <input type="text" pattern="[^a-zA-Z]+" name="nombre" id="nombre" placeholder="Nombre y apellidos" required>
             <br>
             <label for="email">Email:</label>
             <input type="email" placeholder="email" id="email" required>
