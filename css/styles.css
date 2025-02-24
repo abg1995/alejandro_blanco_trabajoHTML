@@ -87,7 +87,7 @@ a {
 }
 
 .opcion {
-  max-height: auto;
+  max-height: 100%;
   padding: 15px;
   margin: 15px;
 }
@@ -101,7 +101,7 @@ main {
   align-items: center;
   justify-content: center;
   background-image: url("../images/AdobeStock_905444846.jpeg");
-  background-size: fit;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
